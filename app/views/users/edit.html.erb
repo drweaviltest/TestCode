@@ -1,0 +1,7 @@
+<h1>Регистрация нового пользователя.</h1>
+<%= form_for @user do |f| %>
+    <p>Имя:<br/> <%= f.text_field :name %></p>
+    <p>Email:<br/> <%= f.text_field :email %></p>
+    <p>Пароль:<br/> <%= f.text_field :password %></p>
+    <%= f.submit "Сохранить изменения" %>
+<% end %>
